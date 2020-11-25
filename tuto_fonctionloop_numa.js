@@ -44,7 +44,7 @@ document.write("<br>Boucle sur le tableau qui liste les étudiants : <br>"); // 
 let tab_etudiants = ["Numa", "Nabil", "Rudy", "Kheira", "Clara", "Romain", "Pierre", "Mohammed", "Romain2", "Stephane", "Sonia", "Loic", "Priscille", "Bryan", "Tiffany", "Khalil", "Straydine", "Nicolas", "Veronica", "Francisco", "Nawal", "Colin", "Thomas"];
 
 for (i = 0; i < tab_etudiants.length; i++) {
-    document.body.append(create_div("*_* " + tab_etudiants[i] + " \\o/")); // Je rajoute des étoiles autour des prénoms
+    document.body.append(create_div("*_* " + tab_etudiants[i] + " \\o/")); // Je rajoute des trucs autour des prénoms pour vous montrer la syntaxe possible, notez les " " et les +
 }
 /* La différence ici avec la boucle "plus simple" précédente, c'est que je détermine automatiquement la longueur du tableau, et donc le nombre de fois ou ma boucle s'effectura,
 en utilisant la formure "NomDuTableau.length", donc ici, le nom de la variable tableau est : tab_etudiants auquel on rajoute .length, ce qui en javascript indiquera a la boucle
