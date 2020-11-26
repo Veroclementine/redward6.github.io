@@ -25,7 +25,7 @@ document.body.append(create_div("On peut aussi écrire directement dans le param
 
 document.write("<br>Boucle sur le tableau simple : <br>");  // simple ligne de texte pour différencer les parties de l'affichage
 // Boucle:
-for (let i = 0; i < 6; i++) { // je créé une variable nommé "i" pour index (convention très courante dans la programmation), qui va me servir de "compteur", fonctionnement expliqué plus bas
+for (let i = 0; i < 6; i++) { // je créé une variable nommé "i" pour index (convention très courante dans la programmation), qui va me servir de compteur, fonctionnement expliqué plus bas
     document.body.append(create_div(tableau[i]));
 }
 
@@ -37,7 +37,7 @@ qui correspond à "mot1". Elle se répète donc 6 fois, "i" s'incrémentant auto
 jusqu'à ce qu'elle arrive à 6, puisqu'elle verra que i = 6, 6 n'étant pas plus petit que 6, elle s'arrête et sort de la boucle. 
 Pour comprendre ça, il faut vraiment essayer de visualiser étape par étape ce qu'elle fait et pourquoi elle s'arrête .
 
-En exemple concret, on peut imaginer ce genre de fonction et boucle pour afficher tout les étudiants de la formation sur une page, basé sur un tableau contenant :    */
+En exemple concret, on peut imaginer ce genre de fonction et boucle pour afficher tout les étudiants de la formation sur une page, basé sur un tableau contenant la liste de nos prénoms:    */
 
 document.write("<br>Boucle sur le tableau qui liste les étudiants : <br>"); // simple ligne de texte pour différencer les parties de l'affichage
 // Exemple plus concret d'un tableau affiché en loop:
@@ -46,7 +46,7 @@ let tab_etudiants = ["Numa", "Nabil", "Rudy", "Kheira", "Clara", "Romain", "Pier
 for (i = 0; i < tab_etudiants.length; i++) {
     document.body.append(create_div("*_* " + tab_etudiants[i] + " \\o/")); // Je rajoute des trucs autour des prénoms pour vous montrer la syntaxe possible, notez les " " et les +
 }
-/* La différence ici avec la boucle "plus simple" précédente, c'est que je détermine automatiquement la longueur du tableau, et donc le nombre de fois ou ma boucle s'effectura,
+/* La différence ici avec la boucle "plus simple" précédente (les mots), c'est que je détermine automatiquement la longueur du tableau, et donc le nombre de fois ou ma boucle s'effectura,
 en utilisant la formure "NomDuTableau.length", donc ici, le nom de la variable tableau est : tab_etudiants auquel on rajoute .length, ce qui en javascript indiquera a la boucle
-combien de fois tourner (toujours en utilisant un i qui part de 0 pour compter) avant de s'arrêter. On a besoin de spécifier à une boucle le nombre de fois ou elle tournera,
-sinon elle risque de tourner à l'infini, et ça ça serait quand même un beau gachis d'énergie (voir ça pourrait faire tout planter, je sais pas j'ai pas essayé) */
+combien de fois tourner (toujours en utilisant un i qui part de 0 pour compter) avant de s'arrêter. On a besoin de spécifier à une boucle le nombre de tours qu'elle a besoin de faire,
+sinon elle risque de tourner à l'infini, et ça ça serait quand même un beau gachis d'énergie (et ça pourrait faire tout planter, je sais pas j'ai pas essayé :D ) */
