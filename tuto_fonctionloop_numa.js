@@ -1,12 +1,12 @@
 // On déclare 3 variables pour pouvoir tester notre fonction, et le tableau spécifiquement pour tester le "for" (loop)
 let text1 = "Bonjour";
 let text2 = "Aurevoir";
-let tableau = ["mot1", "mot2", "mot3", "mot4", "mot5", "mot6"]; /* déclaration et remplissage d'un tableau, attention à la syntaxe c'est important,
+let tableau = ["mot1", "mot2", "mot3", "mot4", "mot5", "mot6"]; /* déclaration et remplissage d'un tableau, attention à la syntaxe c'est important :
 Un tableau c'est une suite de données, la elles sont toutes des "strings" (chaînes de caractère), mais on peut tout aussi bien y mettre des nombres, ou un mélange de variables */
 
 // Fonction:
 function create_div(param) { // fonction créée par moi, donc "create_div" et "param" pourrait tout aussi bien être "chapi" et "chapo", aucune importance, ce ne sont que des noms pour pouvoir les réutiliser par la suite
-    let newDiv = document.createElement("div"); // je créé une variable div, et immédiatement la créé en tant que "div" avec .createElement
+    let newDiv = document.createElement("div"); // je créé une variable newDiv, en tant que "div" avec .createElement
     newDiv.textContent = param; // je remplis cette div avec .textContent, basé sur le paramètre envoyé dans les parenthèses ligne 7 (param), donc une variable (exemple ligne 21 et 22) ou du texte (ligne 23)
     return newDiv; // je retourne / envoie cette div pour pouvoir l'extraire de ma fonction une fois que celle ci a terminé son travail, sans ça on n'y aurait pas accès
 }
@@ -18,9 +18,9 @@ Elle prend en paramètre (param) une variable (ou un texte directement avec " " 
 document.write("<br>Exemples 1, 2 et 3 écrits avec la fonction : <br>"); // simple ligne de texte pour différencer les parties de l'affichage
 
 // Exemples:
-document.body.append(create_div(text1)); // Exemple 1 du fonctionnement de la fonction ci dessus, elle affichera donc text1, variable déclarée au dessus
+document.body.append(create_div(text1)); // Exemple 1 du fonctionnement de la fonction ci dessus, elle affichera donc text1 (Bonjour), variable déclarée au dessus
 document.body.append(create_div(text2)); // Exemple 2, donc idem pour text2, ça créé, et affiche Aurevoir
-document.body.append(create_div("On peut aussi écrire directement dans le paramètre")) // Exemple 3, text direct, mais important de mettre " "
+document.body.append(create_div("On peut aussi écrire directement dans le paramètre")) // Exemple 3, texte direct, mais important de mettre " "
 
 
 document.write("<br>Boucle sur le tableau simple : <br>");  // simple ligne de texte pour différencer les parties de l'affichage
