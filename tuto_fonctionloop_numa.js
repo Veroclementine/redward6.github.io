@@ -15,7 +15,7 @@ function create_div(param) { // fonction créée par moi, donc "create_div" et "
 elle "return" (renvoie un résultat / donnée) à la fin. 
 Le "param" n'existe pas, c'est une sorte de joker / alias, on l'utilise juste pour se préparer à traiter une variable ou un texte, c'est nécessaire.
 Elle prend en paramètre (param) une variable (ou un texte directement avec " " voir 3ème exemple) */
-document.write("<br>Exemples 1, 2 et 3 écrits avec la fonction : <br>"); // simple ligne de texte pour différencer les parties de l'affichage
+document.write("<br>Exemples 1, 2 et 3 écrits avec la fonction : <br>"); // Simple ligne de texte pour différencer les parties de l'affichage
 
 // Exemples:
 document.body.append(create_div(text1)); // Exemple 1 du fonctionnement de la fonction ci dessus, elle affichera donc text1 (Bonjour), variable déclarée au dessus
@@ -23,7 +23,7 @@ document.body.append(create_div(text2)); // Exemple 2, donc idem pour text2, ça
 document.body.append(create_div("On peut aussi écrire directement dans le paramètre")) // Exemple 3, texte direct, mais important de mettre " "
 
 
-document.write("<br>Boucle sur le tableau simple : <br>");  // simple ligne de texte pour différencer les parties de l'affichage
+document.write("<br>Boucle sur le tableau simple : <br>");  // Simple ligne de texte pour différencer les parties de l'affichage
 // Boucle:
 for (let i = 0; i < 6; i++) { // je créé une variable nommé "i" pour index (convention très courante dans la programmation), qui va me servir de compteur, fonctionnement expliqué plus bas
     document.body.append(create_div(tableau[i]));
@@ -39,7 +39,7 @@ Pour comprendre ça, il faut vraiment essayer de visualiser étape par étape ce
 
 En exemple concret, on peut imaginer ce genre de fonction et boucle pour afficher tout les étudiants de la formation sur une page, basé sur un tableau contenant la liste de nos prénoms:    */
 
-document.write("<br>Boucle sur le tableau qui liste les étudiants : <br>"); // simple ligne de texte pour différencer les parties de l'affichage
+document.write("<br>Boucle sur le tableau qui liste les étudiants : <br>"); // Simple ligne de texte pour différencer les parties de l'affichage
 // Exemple plus concret d'un tableau affiché en loop:
 let tab_etudiants = ["Numa", "Nabil", "Rudy", "Kheira", "Clara", "Romain", "Pierre", "Mohammed", "Romain2", "Stephane", "Sonia", "Loic", "Priscille", "Bryan", "Tiffany", "Khalil", "Straydine", "Nicolas", "Veronica", "Francisco", "Nawal", "Colin", "Thomas"];
 
